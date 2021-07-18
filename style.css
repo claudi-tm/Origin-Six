@@ -13,7 +13,6 @@
   --titleColor: black;
   --bodyBackColor: #F9F9F9;
   --textColor2: white;
-
   --fontPoppins: "Poppins";
   --fontDM: "DM Sans";
 }
@@ -69,13 +68,28 @@ p {
     border-bottom: 1px solid #76767628;
 }
 
-#home {
+#home > .container {
     margin: 0;
+}
+
+#home > .container > .text {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+#home > .container > .image > img {
+    position: relative;
+    right: 2.94rem;
 }
 .container {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     /*width: 100%;*/
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
 }
 
 .logo {
