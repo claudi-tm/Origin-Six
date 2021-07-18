@@ -7,8 +7,8 @@
 :root {
   font-size: 100%;
   --headerColor: #F9F9F9;
-  --firstpageBackColor: #F9F9F9;
-  --buttonBackColor: #69B99D;
+  --firstpageBackColor: var(var(--headerColor));
+  --baseColor: #69B99D;
   --textColor: #767676;
   --titleColor: black;
   --bodyBackColor: #F9F9F9;
@@ -40,7 +40,7 @@ nav {
 
 button {
     color: white;
-    background-color: #69b99d;
+    background-color: var(--baseColor);
     border-radius: 5px;
     padding: 10px;
     display: block;
@@ -61,10 +61,17 @@ h1 {
 }
 
 p {
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--fontDM), sans-serif;
     text-align: center;
 }
 
+#header {
+    border-bottom: 1px solid #76767628;
+}
+
+#home {
+    margin: 0;
+}
 .container {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -72,4 +79,16 @@ p {
 }
 
 .logo {
+    font-family: var(--fontPoppins), sans-serif;
+    font-weight: bold;
+    font-size: 1.31rem;
+    color: var(--titleColor);
+}
+
+.logo > span {
+    color: var(--baseColor);
+}
+
+.section {
+    padding: 5rem 0;
 }
