@@ -29,7 +29,7 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--textColor2);
+  /*color: var(--textColor2);*/
 }
 
 nav {
@@ -51,7 +51,12 @@ button {
   display: block;
   margin: auto;
   transition: 0.3s;
-  box-shadow: none;
+  border: none;
+}
+
+button a {
+  text-decoration: none;
+  color: var(--textColor2);
 }
 
 button:hover {
