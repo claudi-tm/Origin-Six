@@ -27,6 +27,10 @@ body {
   font: 400 1rem var(--fontDM), sans-serif;
 }
 
+main {
+  margin-top: calc(var(--headerHeight) + 2rem);
+}
+
 a {
   text-decoration: none;
   /*color: var(--textColor2);*/
@@ -37,6 +41,20 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+nav .menu {
+  visibility: hidden;
+}
+
+nav.show .menu {
+  visibility: visible;
+  background-color: var(--bodyBackColor);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 button {
@@ -91,13 +109,10 @@ p {
   background-color: var(--textColor2);
 }
 
-main {
-  margin-top: var(--headerHeight);
-}
-
 #home {
   overflow: hidden;
 }
+
 #home .container {
   margin: 0;
 }
@@ -129,6 +144,7 @@ main {
 .image {
   position: relative;
 }
+
 .container {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
